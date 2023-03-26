@@ -77,7 +77,7 @@ def main():
     	print(place_ids)
 
 if __name__ == "__main__":
-    	main()`
+    	main() `
 
 ### 3. Commit your changes in Git
 
@@ -96,7 +96,7 @@ def get_manor_ids(place_id):
 	if 'manors' in place.keys():
 		return place['manors']
 	else:
-		return []`
+		return [] `
 ### 2. Check that calling your module does not produce any output
 
 `.env/bin/python3 script1.py`
