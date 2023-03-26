@@ -47,4 +47,24 @@ Non Git ne demande pas de commit.
 `touch .gitignore`
 `nano .gitignore`
 
-On ajoute .env/
+On ajoute .env/ dans le fichier.
+
+###10. Does Git want you to commit something ? Do you think it is a good thing this time ?
+
+Git demande de commit le fichier .gitignore. Oui c'est une bonne idée.
+
+`git add .gitignore`
+
+###11. Do your first commit and check that Git is happy now.
+
+`git commit -m "Exercice1"`
+
+##Exercice2 : Python Script
+
+###1. Install the Python package Requests using pip
+
+`pip install Requests`
+
+###2. Create a Python script that returns the list of all place ids in Derbyshire.
+
+`touch `
