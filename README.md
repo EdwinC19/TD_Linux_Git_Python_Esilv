@@ -68,8 +68,7 @@ Git demande de commit le fichier .gitignore. Oui c'est une bonne idée.
 ### 2. Create a Python script that returns the list of all place ids in Derbyshire.
 
 `touch script.py`
-` 
-import requests
+`import requests
 
 def main():
     	data = requests.get("https://opendomesday.org/api/1.0/county/dby/")
@@ -78,8 +77,7 @@ def main():
     	print(place_ids)
 
 if __name__ == "__main__":
-    	main()
-`
+    	main()`
 
 ### 3. Commit your changes in Git
 
@@ -90,8 +88,7 @@ if __name__ == "__main__":
 ### 1. Create a Python module with a get_manor_ids function that takes a place id as parameter and returns the list of manors
 
 `touch script1.py`
-`
-import requests
+`import requests
 
 def get_manor_ids(place_id):
 	data = requests.get("https://opendomesday.org/api/1.0/place/" + str(place_id))
@@ -99,8 +96,7 @@ def get_manor_ids(place_id):
 	if 'manors' in place.keys():
 		return place['manors']
 	else:
-		return []
-`
+		return []`
 ### 2. Check that calling your module does not produce any output
 
 `.env/bin/python3 script1.py`
@@ -117,10 +113,8 @@ On obtient l'output suivant : [{'id': 13038}]
 
 ### 4. Add a if __name__ == ’__main__’ : block with your previous test, at the end of your module, to make it usable as a script
 
-`
-if __name__ == '__main__' :
-	print(get_manor_ids(1036))
-`
+`if __name__ == '__main__' :
+	print(get_manor_ids(1036))`
 
 ### 5. Check that calling your module now does produce an output
 
