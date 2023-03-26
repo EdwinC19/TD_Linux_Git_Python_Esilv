@@ -79,7 +79,7 @@ Voir script.py
 ### 1. Create a Python module with a get_manor_ids function that takes a place id as parameter and returns the list of manors
 
 `touch script1.py`
-Voir script1.py
+Voir script1.py (sans if __name__ == ’__main__’ :)
 
 ### 2. Check that calling your module does not produce any output
 
