@@ -68,16 +68,7 @@ Git demande de commit le fichier .gitignore. Oui c'est une bonne idée.
 ### 2. Create a Python script that returns the list of all place ids in Derbyshire.
 
 `touch script.py`
-`import requests
-
-def main():
-    	data = requests.get("https://opendomesday.org/api/1.0/county/dby/")
-    	dby = data.json()
-    	place_ids = dby["places_in_county"]
-    	print(place_ids)
-
-if __name__ == "__main__":
-    	main() `
+Voir script.py
 
 ### 3. Commit your changes in Git
 
@@ -88,15 +79,8 @@ if __name__ == "__main__":
 ### 1. Create a Python module with a get_manor_ids function that takes a place id as parameter and returns the list of manors
 
 `touch script1.py`
-`import requests
+Voir script1.py
 
-def get_manor_ids(place_id):
-	data = requests.get("https://opendomesday.org/api/1.0/place/" + str(place_id))
-	place = data.json()
-	if 'manors' in place.keys():
-		return place['manors']
-	else:
-		return [] `
 ### 2. Check that calling your module does not produce any output
 
 `.env/bin/python3 script1.py`
@@ -109,7 +93,7 @@ Aucun output en sortie losrque j'appelle le module.
 `import script1`
 `script1.get_manor_ids(1036)`
 On obtient l'output suivant : [{'id': 13038}]
-`exit`
+`exit()`
 
 ### 4. Add a if __name__ == ’__main__’ : block with your previous test, at the end of your module, to make it usable as a script
 
